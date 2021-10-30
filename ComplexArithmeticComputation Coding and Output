@@ -1,0 +1,42 @@
+// CODING
+
+package selfExercise;
+
+public class ComplexArithmeticComputation {
+	
+//*******************************************
+//		Complex	Arithmetic	Computations
+//*******************************************
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	//	Mathematical Methods in Java
+	// Function							English								Indo
+	//-----------------------------------------------------------------------------------
+	// Math.sqrt(x)	-					Square root							Akar
+	// Math.pow(x, y)					power								Pangkat
+	// Math.exp(x)						Exponent							Pangkat
+	// Math.log(x)						natural log							Logaritma
+	// Math.sin(x) / cos(x) / tan(x)	Sin,cosine,Tangent(x in radiant)	Sin,Kosin,Tan(X di dalam radiant)
+	// Math.round(x)					Closest integer to x				Pembulatan
+	// Math.min(x, y) , Math.max(x, y)	Minimum, Maximum					Minimum, Maximum
+		
+	// Example from presentation
+		float a = 5;
+		float b = 5;
+		float c = 2;
+		float arithmetic;
+		
+		arithmetic =(float) (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+		
+		System.out.print("The arithmetic is ");
+		System.out.println(arithmetic);
+		
+	}
+
+}
+
+// OUTPUT
+
+The arithmetic is NaN
