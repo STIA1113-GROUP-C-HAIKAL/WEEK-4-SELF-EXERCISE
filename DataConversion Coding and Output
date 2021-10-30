@@ -1,0 +1,73 @@
+// CODING
+
+package selfExercise;
+
+public class DataConversion {
+
+//*******************************************************************************
+//			DATA	CONVERSION
+//*******************************************************************************
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	//	A data can be converted to other datas and it's hierarchy
+	//	Widening hierarchy and conversion
+	//	Byte < short = char < int < long < float < double
+	//	Narrowing hierarchy and conversion
+	//	Byte > char = short > int > long > float > double
+	//	Example : an int data type can be converted to a double to widen it's range.
+		
+		//Example
+		
+		int dollars = 50;
+		double money = dollars;
+		
+		System.out.print("The money will become dollars which is ");
+		System.out.println(dollars);
+		
+		//More example
+		
+		long cash = 500;
+		int cash2 = 205;
+		double quid = cash;
+		float quid2 = cash2;
+		
+		System.out.print("The results of the calculation is ");
+		System.out.println(quid + quid2);
+		//This will be called a promotion and all the data types
+		//will all become double, since double is on top of the hierarchy
+		
+		//There is also casting, example below.
+		float ringgit = 5000;
+		short result  = (short) ringgit;
+		System.out.println(result);
+		//It can convert upwards and downrwards.
+		
+		//Exercise
+		//Convert the data below to int and then float then subtract 0.50
+		byte data1 = 50;
+		double data2 = 12;
+		
+		//Answer
+		
+		double data3 = (double) data2;
+	
+		System.out.print("The answer is ");
+		System.out.println(data3 + data1 - 0.50);
+		
+		
+		
+		
+		
+	}
+
+}
+
+// OUTPUT
+/*
+* The money will become dollars which is 50
+* The results of the calculation is 705.0
+* 5000
+* The answer is 61.5
+*/
