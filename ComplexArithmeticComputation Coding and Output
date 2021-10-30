@@ -38,5 +38,6 @@ public class ComplexArithmeticComputation {
 }
 
 // OUTPUT
-
-The arithmetic is NaN
+/*
+*The arithmetic is NaN
+*/
