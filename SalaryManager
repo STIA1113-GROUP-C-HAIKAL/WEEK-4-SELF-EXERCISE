@@ -1,0 +1,82 @@
+package selfExercise;
+
+import java.util.Scanner;
+
+import javax.print.event.PrintEvent;
+
+
+public class SalaryManager {
+
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+			double actualAverage;
+			double roundedAverage;
+			double min1;
+			double min2;
+			double min3;
+			double min4;
+			double minFinale;
+			double max1;
+			double max2;
+			double max3;
+			double max4;
+			double maxFinale;
+			
+			double employee1;
+			double employee2;
+			double employee3;
+			double employee4;
+			double employee5;
+			double employee6;
+	
+			Scanner SalaryScan = new Scanner(System.in);
+
+			System.out.print("Insert the salary of Employee 1 (IN RM) : ");
+			employee1 = SalaryScan.nextDouble();
+			System.out.print("Insert the salary of Employee 2 (IN RM) : ");
+			employee2= SalaryScan.nextDouble();
+			System.out.print("Insert the salary of Employee 3 (IN RM) : ");
+			employee3 = SalaryScan.nextDouble();
+			System.out.print("Insert the salary of Employee 4 (IN RM) : ");
+			employee4 = SalaryScan.nextDouble();
+			System.out.print("Insert the salary of Employee 5 (IN RM) : ");
+			employee5 = SalaryScan.nextDouble();
+			System.out.print("Insert the salary of Employee 6 (IN RM) : ");
+			employee6 = SalaryScan.nextDouble();
+			System.out.println("Below are the details for your salary : ");
+			System.out.println("Employee 1 = RM" + employee1);
+			System.out.println("Employee 2 = RM" + employee2);
+			System.out.println("Employee 3 = RM" + employee3);
+			System.out.println("Employee 4 = RM" + employee4);
+			System.out.println("Employee 5 = RM" + employee5);
+			System.out.println("Employee 6 = RM" + employee6);
+
+			actualAverage = ((employee1 + employee2 + employee3 + employee4 + employee5 +employee6) / 6 );
+			roundedAverage = Math.round(actualAverage);
+			max1 = Math.max(employee1, employee2);
+			max2 = Math.max(employee3, employee4);
+			max3 = Math.max(employee5, employee6);
+			max4 = Math.max(max1, max2);
+			maxFinale = Math.max(max3,max4);
+
+			min1 = Math.min(employee1, employee2);
+			min2 = Math.min(employee3, employee4);
+			min3 = Math.min(employee5, employee6);
+			min4 = Math.min(min1, min2);
+			minFinale = Math.min(min3, min4);
+			
+				System.out.print("The actual average is = ");
+				System.out.printf("%2.2f", actualAverage);
+				System.out.println();
+				System.out.print("The rounded average is = ");
+				System.out.println(roundedAverage);
+				System.out.print("The highest salary is = ");
+				System.out.println(maxFinale);
+				System.out.print("The lowest salary is = ");
+				System.out.print(minFinale);
+			}
+
+
+}
