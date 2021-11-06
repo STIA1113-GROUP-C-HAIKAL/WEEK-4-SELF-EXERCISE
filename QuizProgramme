@@ -1,0 +1,162 @@
+package selfExercise;
+
+import java.util.Scanner;
+
+
+public class QuizProgramme {
+    public static void main(String[] args) 
+    {
+       double answer1;
+       double answer2;
+       double answer3;
+       double answer4;
+       double answer5;
+       int scoreBase = 0;
+
+
+       //Question 1
+        Scanner answerScan = new Scanner(System.in);
+        System.out.println("Question 1");
+        System.out.println("What is the root of 64 ?");
+        System.out.print("Insert the answer : ");
+        answer1 = answerScan.nextDouble();
+        if (answer1 == 8 ) 
+        {
+            scoreBase = + 10;
+            System.out.println("You have acquired +10 points!");
+        } 
+        else if (answer1 >= 8)
+        {
+            scoreBase = - 5;
+            System.out.println("False, you have lost 5 points.");
+        } else if (answer1 <= 8) 
+        {
+            scoreBase = - 5;
+            System.out.println("False, you have lost 5 points.");
+        }
+        System.out.print("Your current score is = ");
+        System.out.println(scoreBase);
+
+        int score1 = 0;
+
+        //Question 2
+        System.out.println("Question 2");
+        System.out.println("What is 35 x 46 - 400 ?");
+        System.out.print("Insert the answer : ");
+        answer2 = answerScan.nextDouble();
+        if (answer2 == 1210 ) 
+        {
+            score1 = + 10;
+            System.out.println("You have acquired +10 points!");
+        } 
+        else if (answer2 == 1.210)
+        {
+            score1 = +10;
+            System.out.println("You have acquired +10 points!");
+        }
+        else if (answer2 >= 1210)
+        
+        {
+            score1 = - 5;
+            System.out.println("False, you have lost 5 points.");
+        } 
+        else if (answer2 <= 1210) 
+        {
+            score1 = - 5;
+            System.out.println("False, you have lost 5 points.");
+        } 
+        System.out.print("Your current score is = ");
+        System.out.println(score1 + scoreBase);
+
+        int score2 = 0;
+
+        //Question 3
+        System.out.println("Question 3");
+        System.out.println("If a car is accelerating 75 kilometres per hour, and it has been in a journey for 240 minutes");
+        System.out.print("Insert the answer : ");
+        answer3 = answerScan.nextDouble();
+        if (answer3 == 300 ) 
+        {
+            score2 = + 10;
+            System.out.println("You have acquired +10 points!");
+        } 
+        else if (answer3 >= 300)
+        {
+            score2 = - 5;
+            System.out.println("False, you have lost 5 points.");
+        } 
+        else if (answer3 <= 300) 
+        {
+            score2 = - 5;
+            System.out.println("False, you have lost 5 points.");
+        } 
+        System.out.print("Your current score is = ");
+        System.out.println(score1 + scoreBase + score2);
+        
+        int score3 = 0;
+
+         //Question 4
+         System.out.println("Question 4");
+         System.out.println("Joshua has 50 American dollars in his pocket, Joshua's mother gave Joshua 10 more British pounds for his pocket money, how many American dollars does Joshua have now ?");
+         System.out.print("Insert the answer : ");
+         answer4 = answerScan.nextDouble();
+         if (answer4 == 63.5 ) 
+         {
+             score3 = + 10;
+             System.out.println("You have acquired +10 points!");
+         } 
+         else if (answer4 >= 63.5)
+         {
+             score3 = - 5;
+             System.out.println("False, you have lost 5 points.");
+         } 
+         else if (answer4 <= 63.5) 
+         {
+             score3 = - 5;
+             System.out.println("False, you have lost 5 points.");
+         } 
+         System.out.print("Your current score is = ");
+         System.out.println(score1 + scoreBase + score2 + score3);
+
+         int score4 = 0;
+
+          //Question 5
+          System.out.println("Question 5");
+          System.out.println("What is the average for 35 + 60 + 75 + 125 + 12 + 56");
+          System.out.print("Insert the answer : ");
+          answer5 = answerScan.nextDouble();
+          if (answer5 == 60.5 ) 
+          {
+              score4 = + 10;
+              System.out.println("You have acquired +10 points!");
+          } 
+          else if (answer5 >= 60.5)
+          {
+              score4 = - 5;
+              System.out.println("False, you have lost 5 points.");
+          } 
+          else if (answer5 <= 60.5) 
+          {
+              score4 = - 5;
+              System.out.println("False, you have lost 5 points.");
+          } 
+          System.out.print("Your final score is = ");
+
+          int ScoreFinale = score1 + scoreBase + score2 + score3 + score4;
+
+          System.out.println(ScoreFinale);
+          if (ScoreFinale == 25) 
+          {
+              System.out.println("You have passed!");
+          } 
+          else if (ScoreFinale >= 25)
+          {
+              System.out.println("You have passed!");
+          } 
+          else if (ScoreFinale <= 25)
+          { 
+              System.out.println("You have failed, try again next time.");
+          }
+    }
+
+}
